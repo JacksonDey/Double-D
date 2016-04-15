@@ -61,7 +61,45 @@ public class IntArrayWorker
       }
     }
   }
+  public int getCount(int x){
+    int numCols = matrix[0].length;
+    int ctr = 0;
+    for (int row = 0; row < matrix.length; row++){
+    
+      for (int col = 0; col < numCols; col++){
+        if(matrix[row][col] == x){
+          ctr++;
+          
+        }
+      }
+    } 
+    return ctr;
+  }
+  public int getLargest(){
+    int numCols = matrix[0].length;
+    int big = 0;
+    for (int row = 0; row < matrix.length; row++){
+    
+      for (int col = 0; col < numCols; col++){
+        if(matrix[row][col] > big){
+          big = matrix[row][col];
+          
+        }
+      }
+    } 
+    return big;
+  }
+  public int getColTotal(int col){
+    
+    int sum = 0;
+    for (int row = 0; row < matrix.length; row++){
+ 
+          sum += matrix[row][col];
+    } 
+    return sum;
+  }
   
+    
   /**
    * print the values in the array in rows and columns
    */
