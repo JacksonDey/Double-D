@@ -1,0 +1,63 @@
+    A1: Introduction to digital pictures and color
+Questions:
+1. How many bits does it take to represent the values from 0 to 255?
+
+8 bits
+
+2.How many bytes does it take to represent a color in the RBG color
+model?
+
+3 bytes
+
+3.How many pixels are in a picture that is 640 pixels wide and 480
+pixels high?
+
+640(480) = 307200 pixels
+================================================================================
+    A2: Picking a color
+Questions:
+1.How can you make pink?
+
+R: 255 G: 0 B: 255
+
+2.How can you make yellow?
+
+R: 255 G: 255 B: 0 
+
+3.How can you make purple?
+
+R: 115 G: 0 B: 255 
+
+4.How can you make white?
+
+R: 255 G: 255 B: 255
+
+5.How can you make dark gray? 
+R: 75 G: 75 B: 75
+
+
+================================================================================
+    A3: Exploring a picture
+Questions:
+1. What is the row index for the top left corner of the picture?
+
+0
+
+2. What is the column index for the top left corner of the picture?
+
+0
+
+3. The width of this picture is 640. What is the right most column index?
+
+639
+
+4. The height of this picture is 480. What is the bottom most row index?
+
+479
+
+5. Does the row index increase from left to right or top to bottom?
+
+
+6. Does the column index increase from left to right or top to bottom?
+7. Set the zoom to 500%. Can you see squares of color? This is called pixelation. Pixelation means
+displaying a picture so magnified that the individual pixels look like small squares.
