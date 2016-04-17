@@ -56,8 +56,22 @@ Questions:
 479
 
 5. Does the row index increase from left to right or top to bottom?
-
+top to bottom
 
 6. Does the column index increase from left to right or top to bottom?
-7. Set the zoom to 500%. Can you see squares of color? This is called pixelation. Pixelation means
-displaying a picture so magnified that the individual pixels look like small squares.
+left to right
+7. Set the zoom to 500%. Can you see squares of color? This is called pixelation. Pixelation means displaying a picture so magnified that the individual pixels look like small squares.
+
+yup
+
+================================================================================
+    A7: Mirroring part of a picture
+Questions:
+1. How many times would the body of this nested for loop execute?
+	for (int row = 7; row < 17; row++)         for (int col = 6; col < 15; col++)
+
+9(10)=90
+
+2. How many times would the body of this nested for loop execute?       for (int row = 5; row <= 11; row++)         for (int col = 3; col <= 18; col++)
+
+7(16)=112
