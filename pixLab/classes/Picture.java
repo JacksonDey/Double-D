@@ -351,7 +351,7 @@ public class Picture extends SimplePicture
       }
     }
   }
-  /*
+  
      public void keepOnlyBlue(){
      Pixel[][] pixels = this.getPixels2D();
      for(Pixel[] rowarray : pixels){
@@ -367,25 +367,26 @@ public class Picture extends SimplePicture
     Pixel[][] pixels = this.getPixels2D();
      for(Pixel[] rowarray : pixels){
        for( Pixel pixelObj : rowarray){
-         pixelObj.setRed(225 - red);
-         pixelObj.setGreen(225 - green);
+	   pixelObj.setRed(225 - (pixelObj.getRed()));
+         pixelObj.setGreen(225 - (pixelObj.getGreen()));
        }
      }
     
-    
-      }
-  public void grayscale(){
-    int grey = (green + blue + red) / 3;
-    Pixel[][] pixels = this.getPixels2D();
-     for(Pixel[] rowarray : pixels){
-       for( Pixel pixelObj : rowarray){
-         pixelObj.setRed(grey);
-         pixelObj.setGreen(grey);
-       }
-     }
     
   }
-  /* Main method for testing - each class in Java can have a main 
+    public void grayscale(){
+      
+	Pixel[][] pixels = this.getPixels2D();
+	for(Pixel[] rowarray : pixels){
+	    for( Pixel pixelObj : rowarray){
+		int grey = ((pixelObj.getGreen()) + (pixelObj.getBlue()) + (pixelObj.getRed())) / 3;
+		pixelObj.setRed(grey);
+		pixelObj.setGreen(grey);
+	    }
+	}
+    
+    }
+    /* Main method for testing - each class in Java can have a main 
    * method 
    */
   public static void main(String[] args) 
